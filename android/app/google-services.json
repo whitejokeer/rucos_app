@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "200444059351",
+    "firebase_url": "https://rucosas.firebaseio.com",
+    "project_id": "rucosas",
+    "storage_bucket": "rucosas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200444059351:android:aea09fa3610937353d5a92",
+        "android_client_info": {
+          "package_name": "com.example.rucosadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "200444059351-8a2vkl16lttegi4rm7epir59pvpct8mj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChOSTaHWggbRuONnDJRjHfKesNNZjc1Kc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "200444059351-8a2vkl16lttegi4rm7epir59pvpct8mj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200444059351:android:9c45c79e91c40bf03d5a92",
+        "android_client_info": {
+          "package_name": "com.kory.rucosapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "200444059351-8a2vkl16lttegi4rm7epir59pvpct8mj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChOSTaHWggbRuONnDJRjHfKesNNZjc1Kc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "200444059351-8a2vkl16lttegi4rm7epir59pvpct8mj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200444059351:android:b1c431d51dcdcf183d5a92",
+        "android_client_info": {
+          "package_name": "com.kory.rucosas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "200444059351-8a2vkl16lttegi4rm7epir59pvpct8mj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChOSTaHWggbRuONnDJRjHfKesNNZjc1Kc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "200444059351-8a2vkl16lttegi4rm7epir59pvpct8mj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

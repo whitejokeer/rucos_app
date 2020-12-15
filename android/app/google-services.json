@@ -37,9 +37,9 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:200444059351:android:9c45c79e91c40bf03d5a92",
+        "mobilesdk_app_id": "1:200444059351:android:f6b15ba61c65b8213d5a92",
         "android_client_info": {
-          "package_name": "com.kory.rucosapp"
+          "package_name": "com.kory.rucos_app"
         }
       },
       "oauth_client": [

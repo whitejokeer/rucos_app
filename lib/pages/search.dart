@@ -1,5 +1,8 @@
 import 'package:flappy_search_bar/flappy_search_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+import 'package:rucos_app/controllers/http_get_products.dart';
+import 'package:rucos_app/models/categorias.dart';
 
 import '../models/producto.dart';
 import 'product.dart';
@@ -13,6 +16,18 @@ class BuscarScreen extends StatefulWidget {
 
 class _BuscarScreenState extends State<BuscarScreen> {
   List<Producto> _products = productos;
+  List<Categorias> _categories = [];
+  ProductProvider pdrProvider = ProductProvider();
+
+  @override
+  void initState() {
+    getData();
+    super.initState();
+  }
+
+  getData() async {
+    _categories = await pdrProvider.getCategorias();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -49,10 +64,41 @@ class _BuscarScreenState extends State<BuscarScreen> {
             ),
             cancellationWidget: Text("Cancelar"),
             placeHolder: Center(
-              child: Text(
-                "Encuentra todo en un solo lugar!",
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 20.0),
+              child: GridView.builder(
+                itemCount: _categories.length,
+                gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2),
+                itemBuilder: (context, index) {
+                  return Card(
+                    elevation: 5.0,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10.0),
+                    ),
+                    child: MaterialButton(
+                      onPressed: () {},
+                      child: Container(
+                        width: double.infinity,
+                        height: 70.0,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10.0),
+                          image: DecorationImage(
+                            image: NetworkImage(
+                                _categories[index].urlImagenCategoria),
+                            fit: BoxFit.fitHeight,
+                            colorFilter: ColorFilter.mode(
+                              Colors.black.withOpacity(0.2),
+                              BlendMode.dstATop,
+                            ),
+                          ),
+                        ),
+                        child: Align(
+                          alignment: Alignment.center,
+                          child: Text(_categories[index].nombreCategoria),
+                        ),
+                      ),
+                    ),
+                  );
+                },
               ),
             ),
             onError: (er) {
